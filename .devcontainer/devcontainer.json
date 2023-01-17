@@ -13,10 +13,10 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8080]
+	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "curl -fsSL https://bun.sh/install | bash && cp ./bun.sh ../"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
