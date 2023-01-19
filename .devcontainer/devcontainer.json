@@ -16,7 +16,7 @@
 	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "curl -fsSL https://bun.sh/install | bash"
+	"postCreateCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
